@@ -3,6 +3,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -15,7 +16,7 @@ func Home(c *gin.Context) {
 		user, ok := _user.(UserInfo)
 		if ok {
 			fmt.Println(user.Name)
-			panic("xxx")
+			// panic("xxx")
 		}
 	}
 	c.String(200, "Home")
